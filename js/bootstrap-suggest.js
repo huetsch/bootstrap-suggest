@@ -26,7 +26,7 @@
 
 		this.$element = $(el);
 		this.$items = undefined;
-		this.options = $.extend(true, {}, $.fn.suggest.defaults, options, this.$element.data(), this.$element.data('options'));
+		this.options = $.extend({}, $.fn.suggest.defaults, options, this.$element.data(), this.$element.data('options'));
 		this.key = key;
 		this.isShown = false;
 		this.query = '';
