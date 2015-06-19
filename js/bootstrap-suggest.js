@@ -214,10 +214,10 @@
 			} else _data = this.options.data;
 
 			if (_data && _data instanceof Array) {
-				for (var i in _data) {
+        Object.keys(_data).forEach(function (i) {
 					if ($item = this.__mapItem(_data[i]))
 						$dropdown.find('.dropdown-menu').append($item.addClass('hidden'));
-				}
+        }
 			}
 
 			var blur = function(e) {
