@@ -217,7 +217,7 @@
         Object.keys(_data).forEach(function (i) {
 					if ($item = this.__mapItem(_data[i]))
 						$dropdown.find('.dropdown-menu').append($item.addClass('hidden'));
-        }
+        })
 			}
 
 			var blur = function(e) {
